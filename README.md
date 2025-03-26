@@ -22,22 +22,29 @@ Node.js (version 12 or higher)
 npm (or yarn)
 
 **Setup Instructions**
+
 **1. Clone the Repository**
+
 bash
 Copy
 Edit
 git clone https://github.com/your-username/product-api-tests.git
 cd product-api-tests
+
 **2. Install Dependencies**
+
 Run the following command to install the necessary dependencies:
 bash
 Copy
 Edit
 npm install
+
 **3. Environment Variables**
+
 Ensure that the necessary environment variables for the API (e.g., API URL, authentication tokens) are set. These may need to be specified in a .env file or another configuration file, depending on your environment.
 
 **4. Run the Tests**
+
 To execute the test suite, run:
 bash
 Copy
@@ -53,6 +60,7 @@ The workflow is defined in .github/workflows/test.yml.
 You can modify the workflow to fit your requirements.
 
 **GitHub Actions CI Workflow Example**
+
 yaml
 Copy
 Edit
@@ -84,7 +92,9 @@ jobs:
 
       - name: Run tests
         run: npm test
-Test Output
+        
+**Test Output**
+
 When you run the tests, you should see an output similar to the following:
 
 bash
@@ -118,6 +128,3 @@ The afterAll hook ensures that any created products are deleted to avoid leaving
 Add more test cases for additional API endpoints (search products, filter products).
 
 Implement detailed logging for each API call to improve debugging.
-
-License
-This project is licensed under the MIT License – see the LICENSE file for details.
